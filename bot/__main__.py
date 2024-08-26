@@ -94,7 +94,7 @@ async def start(ctx):
     buttons.ubutton("Repo", "https://www.github.com/anasty17/mirror-leech-telegram-bot")
     buttons.ubutton("Owner", "https://t.me/anas_tayyar")
     reply_markup = buttons.build_menu(2)
-    await sendMessage(ctx.event.message, id, reply_markup)
+    #await sendMessage(ctx.event.message, id, reply_markup)
     if await CustomFilters.authorized(ctx):
         start_string = f"""
 This bot can mirror all your links|files|torrents to Google Drive or any rclone cloud or to telegram.
